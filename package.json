@@ -1,0 +1,11 @@
+{
+	"name":"Jabber-Server",
+	"version" : "0.0.0",
+	"description": "Simple Jabber Node",
+	"dependencies": {
+		"socket.io":"latest",
+		"express":"latest",
+		"jade":"latest"
+	},
+	"author":"Aboorva-Devarajan"
+}
