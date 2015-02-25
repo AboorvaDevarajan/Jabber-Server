@@ -5,12 +5,20 @@ html
       title "Jabber Server - Let's Jabber Out! :) "
       script(src='/chat.js')
       script(src='/socket.io.js')
+      script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+      script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+      link(class="cssdeck", rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css")
    body
-      #content(style='width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
-      .controls
-         | Name:
-         input#name(style='width:350px;')
-         br
-         input#field(style='width:350px;')
-         input#send(type='button', value='send')
-          
+      .container
+         img(src= "/icon.png", style='height: 80px;')
+         h2 Jabber Out
+         #content(style='width: 800px; height: 350px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
+         .controls
+            br
+            | Enter your name:    
+            input#name(style='width:150px;')
+            br
+            br
+            input#field(style='width:800px;')
+            | &nbsp;&nbsp;&nbsp;&nbsp;
+            input#send(type='button', value='send', class='btn btn-success')
